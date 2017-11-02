@@ -1,5 +1,4 @@
 # Two stage Dockerfile
-
 # STAGE 0: Use alpine to get the latest release.
 FROM alpine:latest
 RUN apk update; apk add wget ca-certificates
