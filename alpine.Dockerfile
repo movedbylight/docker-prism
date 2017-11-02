@@ -1,5 +1,4 @@
 # This is an example only. 
-
 # STAGE 0 Build Prism
 FROM golang:alpine
 COPY . /path/to/prism/source
