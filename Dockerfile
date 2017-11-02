@@ -4,6 +4,7 @@ FROM alpine:latest
 RUN apk update; apk add wget ca-certificates
 # Manually update this
 ENV PRISM_SOURCE="https://github.com/stoplightio/prism/releases/download/v2.0.0-beta.2/prism_linux_amd64"
+ENV PRISM_SOURCE="https://github.com/stoplightio/prism/releases/download/v0.6.21/prism_linux_amd64"
 RUN wget -O /prism "${PRISM_SOURCE}"
 
 # STAGE 1: build the ubuntu image with the prism executable downloaded in STAGE 0
